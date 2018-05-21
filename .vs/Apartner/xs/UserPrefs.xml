@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{DB2125DA-E176-4E2A-ADA5-F7C36AB5A791}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Apartner/ViewModels/SwipeListener.cs">
+    <Files>
+      <File FileName="Apartner/Views/MainPage.cs" Line="7" Column="33" />
+      <File FileName="Apartner/Views/SignUpPage.xaml" Line="6" Column="1" />
+      <File FileName="Apartner/Views/SignUpPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Apartner/Models/User.cs" Line="14" Column="1" />
+      <File FileName="Apartner/Models/Item.cs" Line="9" Column="34" />
+      <File FileName="Apartner/Views/ItemsPage.xaml" Line="23" Column="1" />
+      <File FileName="Apartner/Views/ItemsPage.xaml.cs" Line="15" Column="1" />
+      <File FileName="Apartner/Views/ItemDetailPage.xaml" Line="8" Column="1" />
+      <File FileName="Apartner/Views/LoginPage.xaml" Line="17" Column="1" />
+      <File FileName="Apartner/App.xaml" Line="19" Column="1" />
+      <File FileName="Apartner/App.xaml.cs" Line="24" Column="63" />
+      <File FileName="Apartner/Views/LoginPage.xaml.cs" Line="11" Column="25" />
+      <File FileName="Apartner/ViewModels/ItemDetailViewModel.cs" Line="1" Column="1" />
+      <File FileName="Apartner/ViewModels/ItemsViewModel.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.3.0-19/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1910" Column="3" />
+      <File FileName="Apartner/Views/SwipePage.xaml" Line="14" Column="38" />
+      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="10" Column="25" />
+      <File FileName="Apartner/Services/IDataStore.cs" Line="1" Column="1" />
+      <File FileName="Apartner/ViewModels/SwipeListener.cs" Line="69" Column="2" />
+      <File FileName="Apartner/ViewModels/ISwipeCallBack.cs" Line="5" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Apartner.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.29552F8E-2DA3-4C79-B9EC-CFEF1EB3376A" FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Apartner.iOS>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Models/User.cs" relfile="Apartner/Models/User.cs" line="7" column="26" />
+      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/LoginPage.xaml.cs" relfile="Apartner/Views/LoginPage.xaml.cs" line="27" column="1" />
+      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/ItemsPage.xaml.cs" relfile="Apartner/Views/ItemsPage.xaml.cs" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Apartner FirstBuild="True" HideGettingStarted="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Apartner.Droid PreferredExecutionTarget="Android.Pixel_2_API_26" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>
