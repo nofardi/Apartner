@@ -19,9 +19,9 @@ namespace Apartner
                 DependencyService.Register<CloudDataStore>();
 
             if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new Views.LoginPage();
+                MainPage = new Views.LoginPage(); //TODO: check why diff from android
             else
-                MainPage = new NavigationPage(new Views.SwipePage());
+                MainPage = new NavigationPage(new Views.LoginPage());
         }
     }
 }

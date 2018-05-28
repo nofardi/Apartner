@@ -13,7 +13,7 @@ namespace Apartner.Views
 
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignUpPage());
+            await Navigation.PushAsync(new Views.SignUpPage());
         }
 
         async void OnLoginButtonClicked(object sender, EventArgs e)
@@ -28,7 +28,8 @@ namespace Apartner.Views
             if (isValid)
             {
                 //App.IsUserLoggedIn = true;
-                Navigation.InsertPageBefore(new MainPage(), this);
+                var swipePage = new Views.SwipePage();
+                Navigation.InsertPageBefore(swipePage, this);
                 await Navigation.PopAsync();
             }
             else
@@ -40,7 +41,7 @@ namespace Apartner.Views
 
         bool AreCredentialsCorrect(User user)
         {
-            return user.isUserSignedUp();
+            return user.IsUserSignedUp();
         }
     }
 }

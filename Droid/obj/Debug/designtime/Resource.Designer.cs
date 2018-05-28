@@ -28,6 +28,9 @@ namespace Apartner.Droid
 		{
 			
 			// aapt resource value: 0
+			public static int backgroundApart = 0;
+			
+			// aapt resource value: 0
 			public static int icon = 0;
 			
 			// aapt resource value: 0

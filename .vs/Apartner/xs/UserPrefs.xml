@@ -1,36 +1,48 @@
 ﻿<Properties StartupConfiguration="{DB2125DA-E176-4E2A-ADA5-F7C36AB5A791}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apartner/ViewModels/SwipeListener.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Apartner/Views/SwipePage.xaml.cs">
     <Files>
-      <File FileName="Apartner/Views/MainPage.cs" Line="7" Column="33" />
-      <File FileName="Apartner/Views/SignUpPage.xaml" Line="6" Column="1" />
-      <File FileName="Apartner/Views/SignUpPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Apartner/Models/User.cs" Line="14" Column="1" />
-      <File FileName="Apartner/Models/Item.cs" Line="9" Column="34" />
-      <File FileName="Apartner/Views/ItemsPage.xaml" Line="23" Column="1" />
-      <File FileName="Apartner/Views/ItemsPage.xaml.cs" Line="15" Column="1" />
-      <File FileName="Apartner/Views/ItemDetailPage.xaml" Line="8" Column="1" />
-      <File FileName="Apartner/Views/LoginPage.xaml" Line="17" Column="1" />
-      <File FileName="Apartner/App.xaml" Line="19" Column="1" />
-      <File FileName="Apartner/App.xaml.cs" Line="24" Column="63" />
-      <File FileName="Apartner/Views/LoginPage.xaml.cs" Line="11" Column="25" />
+      <File FileName="Apartner/Views/MainPage.cs" Line="16" Column="43" />
+      <File FileName="Apartner/Views/LoginPage.xaml.cs" Line="33" Column="45" />
       <File FileName="Apartner/ViewModels/ItemDetailViewModel.cs" Line="1" Column="1" />
-      <File FileName="Apartner/ViewModels/ItemsViewModel.cs" Line="1" Column="1" />
-      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.3.0-19/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1910" Column="3" />
-      <File FileName="Apartner/Views/SwipePage.xaml" Line="14" Column="38" />
-      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="10" Column="25" />
-      <File FileName="Apartner/Services/IDataStore.cs" Line="1" Column="1" />
-      <File FileName="Apartner/ViewModels/SwipeListener.cs" Line="69" Column="2" />
-      <File FileName="Apartner/ViewModels/ISwipeCallBack.cs" Line="5" Column="6" />
+      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="23" Column="1" />
+      <File FileName="Apartner/App.xaml.cs" Line="24" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Apartner" expanded="True">
+            <Node name="Apartner" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="ItemsPage.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True" />
+                <Node name="SignUpPage.xaml" expanded="True" />
+                <Node name="SwipePage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="Apartner.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+                <Node name="drawable-xxhdpi" expanded="True">
+                  <Node name="backgroundApart.jpg" selected="True" />
+                </Node>
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Apartner.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.29552F8E-2DA3-4C79-B9EC-CFEF1EB3376A" FirstBuild="True">
+  <MonoDevelop.Ide.ItemProperties.Apartner.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.29552F8E-2DA3-4C79-B9EC-CFEF1EB3376A">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.Apartner.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Models/User.cs" relfile="Apartner/Models/User.cs" line="7" column="26" />
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/LoginPage.xaml.cs" relfile="Apartner/Views/LoginPage.xaml.cs" line="27" column="1" />
       <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/ItemsPage.xaml.cs" relfile="Apartner/Views/ItemsPage.xaml.cs" line="15" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

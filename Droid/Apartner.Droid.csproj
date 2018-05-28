@@ -137,6 +137,7 @@
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\backgroundApart.jpg" />
   </ItemGroup>
   <Import Project="..\Apartner\Apartner.projitems" Label="Shared" Condition="Exists('..\Apartner\Apartner.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
