@@ -1,0 +1,29 @@
+Function=xamarin_timezone_get_data
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=CreateZStream
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/ndiamant/Projects/Apartner/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+Function=mono_pmip

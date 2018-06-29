@@ -138,6 +138,13 @@
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\drawable-xxhdpi\backgroundApart.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\couch_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cables_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\coffee_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\location_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\calendar_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cash_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\team_icon.png" />
   </ItemGroup>
   <Import Project="..\Apartner\Apartner.projitems" Label="Shared" Condition="Exists('..\Apartner\Apartner.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

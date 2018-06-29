@@ -15,13 +15,10 @@ namespace Apartner
 
             if (UseMockDataStore)
                 DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<CloudDataStore>();
+            //else
+                //DependencyService.Register<CloudDataStore>();
 
-            if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new Views.LoginPage(); //TODO: check why diff from android
-            else
-                MainPage = new NavigationPage(new Views.LoginPage());
+            MainPage = new NavigationPage(new Views.LoginPage());
         }
     }
 }

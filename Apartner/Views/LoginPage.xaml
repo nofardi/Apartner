@@ -5,13 +5,13 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
-            <Image Source="backgroundApart.jpeg" HeightRequest="300" HorizontalOptions="StartAndExpand"/>
-            <Label Text="Username" />
+            <Grid>
+                <Image Source="backgroundApart.jpeg" HeightRequest="300" WidthRequest="1000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+            </Grid>
             <Entry x:Name="usernameEntry" Placeholder="username" />
-            <Label Text="Password" />
             <Entry x:Name="passwordEntry" Placeholder="password" IsPassword="true" />
             <Button Text="Login" Clicked="OnLoginButtonClicked" />
             <Label x:Name="messageLabel" />
-        </StackLayout>
+       </StackLayout>
     </ContentPage.Content>
 </ContentPage>

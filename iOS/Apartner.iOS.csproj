@@ -108,6 +108,22 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\couch_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\couch_icon.imageset\couch_icon.png" />
+    <ImageAsset Include="Assets.xcassets\backgroundApart.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\backgroundApart.imageset\backgroundApart.jpg" />
+    <ImageAsset Include="Assets.xcassets\coffee_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cables_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coffee_icon.imageset\coffee_icon.png" />
+    <ImageAsset Include="Assets.xcassets\cables_icon.imageset\cables_icon.png" />
+    <ImageAsset Include="Assets.xcassets\team_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cash_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\calendar_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\calendar_icon.imageset\calendar_icon.png" />
+    <ImageAsset Include="Assets.xcassets\cash_icon.imageset\cash_icon.png" />
+    <ImageAsset Include="Assets.xcassets\team_icon.imageset\team_icon.png" />
+    <ImageAsset Include="Assets.xcassets\location_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\location_icon.imageset\location_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_about.png" />
@@ -131,6 +147,19 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\backgroundApart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\couch_icon.imageset\" />
+    <Folder Include="Assets.xcassets\backgroundApart.imageset\" />
+    <Folder Include="Assets.xcassets\coffee_icon.imageset\" />
+    <Folder Include="Assets.xcassets\cables_icon.imageset\" />
+    <Folder Include="Assets.xcassets\team_icon.imageset\" />
+    <Folder Include="Assets.xcassets\cash_icon.imageset\" />
+    <Folder Include="Assets.xcassets\calendar_icon.imageset\" />
+    <Folder Include="Assets.xcassets\location_icon.imageset\" />
   </ItemGroup>
   <Import Project="..\Apartner\Apartner.projitems" Label="Shared" Condition="Exists('..\Apartner\Apartner.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

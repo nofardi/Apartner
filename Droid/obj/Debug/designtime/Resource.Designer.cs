@@ -31,7 +31,28 @@ namespace Apartner.Droid
 			public static int backgroundApart = 0;
 			
 			// aapt resource value: 0
+			public static int cables_icon = 0;
+			
+			// aapt resource value: 0
+			public static int calendar_icon = 0;
+			
+			// aapt resource value: 0
+			public static int cash_icon = 0;
+			
+			// aapt resource value: 0
+			public static int coffee_icon = 0;
+			
+			// aapt resource value: 0
+			public static int couch_icon = 0;
+			
+			// aapt resource value: 0
 			public static int icon = 0;
+			
+			// aapt resource value: 0
+			public static int location_icon = 0;
+			
+			// aapt resource value: 0
+			public static int team_icon = 0;
 			
 			// aapt resource value: 0
 			public static int xamarin_logo = 0;

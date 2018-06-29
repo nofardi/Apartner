@@ -28,6 +28,7 @@ namespace Apartner.Views
             if (isValid)
             {
                 //App.IsUserLoggedIn = true;
+
                 var swipePage = new Views.SwipePage();
                 Navigation.InsertPageBefore(swipePage, this);
                 await Navigation.PopAsync();
