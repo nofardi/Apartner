@@ -1,24 +1,25 @@
-﻿<Properties StartupConfiguration="{DB2125DA-E176-4E2A-ADA5-F7C36AB5A791}|Default">
+﻿<Properties StartupConfiguration="{BCDD4629-7BBE-4A82-A9ED-C05274AC48B0}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Apartner/Views/ImageModalPage.xaml">
     <Files>
       <File FileName="Apartner/Services/MockDataStore.cs" Line="28" Column="1" />
       <File FileName="Apartner/Models/Apartment.cs" Line="23" Column="10" />
-      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="60" Column="13" />
+      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="58" Column="36" />
       <File FileName="Apartner/ViewModels/ApartmentViewModel.cs" Line="62" Column="1" />
       <File FileName="Apartner/Views/SwipePage.xaml" Line="18" Column="126" />
       <File FileName="Apartner/Models/PropertiesImages.cs" Line="11" Column="44" />
-      <File FileName="Apartner/Views/ImageModalPage.xaml" Line="6" Column="1" />
-      <File FileName="Apartner/Views/ImageModalPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Apartner/Views/ImageModalPage.xaml" Line="11" Column="94" />
+      <File FileName="Apartner/Views/ImageModalPage.xaml.cs" Line="25" Column="48" />
+      <File FileName="iOS/Main.cs" Line="20" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Apartner.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.365BFA1E-E86C-4D4A-B80F-C3E5E47FBB26">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.Apartner.iOS>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/SwipePage.xaml.cs" relfile="Apartner/Views/SwipePage.xaml.cs" line="71" column="1" />
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/SwipePage.xaml.cs" relfile="Apartner/Views/SwipePage.xaml.cs" line="83" column="1" />
+      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/SwipePage.xaml.cs" relfile="Apartner/Views/SwipePage.xaml.cs" line="72" column="1" />
+      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/SwipePage.xaml.cs" relfile="Apartner/Views/SwipePage.xaml.cs" line="84" column="1" />
       <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Models/Apartment.cs" relfile="Apartner/Models/Apartment.cs" line="53" column="1" />
       <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Models/Apartment.cs" relfile="Apartner/Models/Apartment.cs" line="45" column="1" />
     </BreakpointStore>

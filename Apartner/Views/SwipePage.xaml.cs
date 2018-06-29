@@ -57,7 +57,7 @@ namespace Apartner.Views
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            var detailPage = new ImageModalPage();
+            var detailPage = new ImageModalPage(apartmentModel.Apartment.Images[0]);
             await Navigation.PushModalAsync(detailPage);
         }
 
