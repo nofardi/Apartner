@@ -21,14 +21,6 @@ namespace Apartner.Views
 
         }
 
-        private void addApartPhotoToGrid()
-        {
-            Image apartImage = new Image();
-            apartImage.Source = PropertiesImages.m_PropertiesImages["apartImage"];
-            Grid.SetRow(apartImage, 1);
-            Grid.SetColumn(apartImage, 1);
-        }
-
         private void addPropsToGrid()
         {
             List <string> propeties = apartmentModel.Apartment.Properties;
@@ -50,15 +42,13 @@ namespace Apartner.Views
                 ApartmentView.Children.Add(propLayout);
                 Grid.SetRow(propLayout, (propIdx / 3) + 5);
                 Grid.SetColumn(propLayout, (propIdx % 3) + 1);
-
             }
-
         }
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            var detailPage = new ImageModalPage(apartmentModel.Apartment.Images[0]);
-            await Navigation.PushModalAsync(detailPage);
+            var imageSource = new ImageModalPage(apartmentModel.Apartment.Images[0]);
+            await Navigation.PushModalAsync(imageSource);
         }
 
         public void onBottomSwipe(View view)
