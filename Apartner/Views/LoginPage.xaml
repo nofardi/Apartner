@@ -5,15 +5,15 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
-            <Grid>
-                <Image Source="backgroundApart.jpeg" HeightRequest="300" WidthRequest="1000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+            <Grid IsClippedToBounds="true">
+                <Image Source="backgroundApart.jpeg" HeightRequest="300" VerticalOptions="StartAndExpand"/>
             </Grid>
             <StackLayout Orientation="Vertical" Padding="0,20,0,0">
                 <Button x:Name="fbButton" Text="Login with Facebook" BackgroundColor="#88B3E6" Clicked="OnFacebookClick" TextColor="Black" Margin="20"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
-                    <BoxView BackgroundColor="Black" HeightRequest="1"  HorizontalOptions="Fill"/>
-                    <Label Text="OR"/>
-                    <BoxView BackgroundColor="Black" HeightRequest="1"  HorizontalOptions="Fill"/>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="100" VerticalOptions="Center"/>
+                    <Label Text="OR" FontAttributes="Bold"/>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="100" VerticalOptions="Center"/>
                 </StackLayout>
                 <Button x:Name="gmailButton" Text="Login with Gmail" BackgroundColor="#CB8B80" Clicked="OnGmailClick" TextColor="Black" Margin="20"/>
             </StackLayout>

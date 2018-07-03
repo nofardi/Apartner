@@ -13,13 +13,13 @@
                         <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-             <StackLayout Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Padding="0" Spacing="5">
-                <Label x:Name="apartSwipe">Apartment</Label>
-                <Button Clicked="Handle_Clicked" Image="{Binding Apartment.Images[0]}" HeightRequest="50" WidthRequest="50"/>
+             <StackLayout x:Name="apartSwipe" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Padding="0" Spacing="5">
+                <Label>Apartment</Label>
+                <Button Clicked="Image_Clicked" Image="{Binding Apartment.Images[0]}" HeightRequest="100" WidthRequest="100"/>
             </StackLayout>
             <StackLayout Grid.Row="3" Grid.ColumnSpan="3" Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
                 <Image Source="location_icon" HeightRequest="20" WidthRequest="20"/>
-                <Label Text="{Binding Apartment.Address}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Label Text="{Binding Apartment.Address, Mode=TwoWay}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
             </StackLayout>
             <StackLayout Grid.Row="4" Grid.Column="1">
                 <Image Source="cash_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="StartAndExpand"/>

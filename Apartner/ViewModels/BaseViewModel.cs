@@ -9,7 +9,7 @@ namespace Apartner
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Apartment> DataStore => DependencyService.Get<IDataStore<Apartment>>() ?? new MockDataStore();
+        public IDataStore<string> DataStore => DependencyService.Get<IDataStore<string>>() ?? new MockDataStore();
 
         bool isBusy = false;
         public bool IsBusy

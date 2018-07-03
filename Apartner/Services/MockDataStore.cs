@@ -6,21 +6,18 @@ using Apartner.Models;
 
 namespace Apartner
 {
-    public class MockDataStore : IDataStore<Apartment>
+    public class MockDataStore : IDataStore<string>
     {
-        List<Apartment> apartments;
+        List<string> apartments;
 
         public MockDataStore()
         {
-            apartments = new List<Apartment>();
-            var mockItems = new List<Apartment>
+            apartments = new List<string>();
+            var mockItems = new List<string>
             {
-                new Apartment { Address = "Rashi 13",  Price = 3500, RoomsNumber = 2, 
-                    Properties = new List<string>{"Coffee Machine", "Cables", "Furnished"}, RoommatesNumber = 4, EntryDate = 1.8,
-                    Images = new List<string>{"backgroundApart"}},
-                new Apartment { Address = "Dizi 124",  Price = 3100, RoomsNumber = 3,
-                    Properties = new List<string>{"Coffee Machine"}, RoommatesNumber = 2, EntryDate = 1.10,
-                    Images = new List<string>{"backgroundApart"}},
+                @"{'Address': 'Rashi 13', 'Price': '3500', 'RoommatesNumber': '2', 'EntryDate': '1.8', 'Properties': ['Coffee Machine','Cables','Furnished'], 'Images': ['backgroundApart']}", 
+                @"{'Address': 'Dizi 123', 'Price': '3100', 'RoommatesNumber': '3', 'EntryDate': '1.9', 'Properties': ['Cables'], 'Images': ['backgroundApart']}",  
+                    
             };
 
             foreach (var item in mockItems)
@@ -29,13 +26,17 @@ namespace Apartner
             }
         }
 
-        //public async Task<bool> AddItemAsync(Item item)
-        //{
-        //    items.Add(item);
+        public async Task<bool> LikedApartmentAsync(string item)
+        {
 
-        //    return await Task.FromResult(true);
-        //}
+            return await Task.FromResult(true);
+        }
 
+        public async Task<bool> DislikedApartmentAsync(string item)
+        {
+
+            return await Task.FromResult(true);
+        }
         //public async Task<bool> UpdateItemAsync(Item item)
         //{
         //    var _item = apartments.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
@@ -53,12 +54,12 @@ namespace Apartner
         //    return await Task.FromResult(true);
         //}
 
-        public async Task<Apartment> GetItemAsync(string id)
+        public async Task<string> GetItemAsync(string id)
         {
-            return await Task.FromResult(apartments.FirstOrDefault(s => s.Address == id));
+            return await Task.FromResult(apartments.FirstOrDefault(s => s.Contains("Address")));
         }
 
-        public async Task<IEnumerable<Apartment>> GetItemsAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<string>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(apartments);
         }

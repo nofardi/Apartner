@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HotTotem.RoundedContentView</name>
+    </assembly>
+    <members>
+        <member name="P:HotTotem.RoundedContentView.RoundedContentView.FillColor">
+            <summary>
+            The background color of the rounded ContentView
+            </summary>
+        </member>
+        <member name="F:HotTotem.RoundedContentView.RoundedContentView.FillColorProperty">
+            <summary>
+            The background color of the rounded ContentView
+            </summary>
+        </member>
+        <member name="P:HotTotem.RoundedContentView.RoundedContentView.CornerRadius">
+            <summary>
+            The Corner Radius of the ContentView
+            Defaults to 0 which is not rounded.
+            </summary>
+        </member>
+        <member name="P:HotTotem.RoundedContentView.RoundedContentView.Circle">
+            <summary>
+            If set to true, the ContentView will be circular
+            This means the edges will be rounded as much as necessary 
+            to form a circle
+            </summary>
+        </member>
+    </members>
+</doc>

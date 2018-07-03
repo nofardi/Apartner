@@ -8,23 +8,24 @@ namespace Apartner.Views
 {
     public partial class SwipePage : ContentPage, ISwipeCallBack
     {
-        ApartmentViewModel apartmentModel;
-        
+        ApartmentViewModel m_ApartmentModel;
+        List<StackLayout> m_PropLayouts;
+
         public SwipePage()
         {
-            apartmentModel = new ApartmentViewModel();
-            apartmentModel.LoadItemsCommand.Execute(null);
             InitializeComponent();
-            addPropsToGrid();
+            m_ApartmentModel = new ApartmentViewModel();
+            m_ApartmentModel.LoadItemsCommand.Execute(null);
             SwipeListener swipeListener = new SwipeListener(apartSwipe, this);
-            BindingContext = apartmentModel;
-
+            BindingContext = m_ApartmentModel;
+            m_PropLayouts = new List<StackLayout>();
+            m_ApartmentModel.Apartment.DeserializeApart(m_ApartmentModel.ApartmentsJson[0]);
+            addPropsToGrid();
         }
 
         private void addPropsToGrid()
         {
-            List <string> propeties = apartmentModel.Apartment.Properties;
-
+            List <string> propeties = m_ApartmentModel.Apartment.Properties;
             for (int propIdx = 0; propIdx < propeties.Count; propIdx++)
             {
                 StackLayout propLayout = new StackLayout();
@@ -40,14 +41,23 @@ namespace Apartner.Views
                 propLayout.Children.Add(propLabel);
                 propLayout.Margin = new Thickness(0, 0, 0, 10);
                 ApartmentView.Children.Add(propLayout);
+                m_PropLayouts.Add(propLayout);
                 Grid.SetRow(propLayout, (propIdx / 3) + 5);
                 Grid.SetColumn(propLayout, (propIdx % 3) + 1);
             }
         }
 
-        async void Handle_Clicked(object sender, System.EventArgs e)
+        private void removePropFromView()
         {
-            var imageSource = new ImageModalPage(apartmentModel.Apartment.Images[0]);
+            foreach(StackLayout prop in m_PropLayouts)
+            {
+                ApartmentView.Children.Remove(prop);
+            }
+        }
+
+        async void Image_Clicked(object sender, System.EventArgs e)
+        {
+            var imageSource = new ImageModalPage(m_ApartmentModel.Apartment.Images[0]);
             await Navigation.PushModalAsync(imageSource);
         }
 
@@ -59,7 +69,9 @@ namespace Apartner.Views
         public void onLeftSwipe(View view)
         {
             //remove apratment for list
-            apartmentModel.RemoveApartment();
+            MessagingCenter.Send(this, "DislikedApartment", m_ApartmentModel.Apartment);
+            m_ApartmentModel.RemoveApartment();
+            removePropFromView();
             addPropsToGrid();
             //remove apartment from user DB
         }
@@ -71,7 +83,9 @@ namespace Apartner.Views
 
         public void onRightSwipe(View view)
         {
-            apartmentModel.RemoveApartment();
+            MessagingCenter.Send(this, "LikedApartment", m_ApartmentModel.Apartment);
+            m_ApartmentModel.RemoveApartment();
+            removePropFromView();
             addPropsToGrid();
         }
 

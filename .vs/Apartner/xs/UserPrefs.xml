@@ -1,18 +1,13 @@
 ﻿<Properties StartupConfiguration="{BCDD4629-7BBE-4A82-A9ED-C05274AC48B0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apartner/ViewModels/SwipeListener.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="packages/Xamarin.Forms.3.1.0.583944/build/netstandard2.0/Xamarin.Forms.targets">
     <Files>
-      <File FileName="Apartner/Services/MockDataStore.cs" Line="28" Column="1" />
-      <File FileName="Apartner/Models/Apartment.cs" Line="51" Column="45" />
-      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="76" Column="1" />
-      <File FileName="Apartner/ViewModels/ApartmentViewModel.cs" Line="62" Column="1" />
-      <File FileName="Apartner/Views/SwipePage.xaml" Line="17" Column="43" />
-      <File FileName="Apartner/Views/ImageModalPage.xaml" Line="9" Column="23" />
-      <File FileName="Apartner/Views/ImageModalPage.xaml.cs" Line="13" Column="1" />
-      <File FileName="iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="Apartner/Views/LoginPage.xaml" Line="13" Column="83" />
-      <File FileName="Apartner/Views/LoginPage.xaml.cs" Line="54" Column="1" />
-      <File FileName="iOS/obj/iPhoneSimulator/Debug/Apartner.iOS.Views.LoginPage.xaml.g.cs" Line="19" Column="9" />
-      <File FileName="Apartner/ViewModels/SwipeListener.cs" Line="65" Column="1" />
+      <File FileName="Apartner/Services/MockDataStore.cs" Line="30" Column="10" />
+      <File FileName="Apartner/Views/SwipePage.xaml.cs" Line="72" Column="45" />
+      <File FileName="Apartner/ViewModels/ApartmentViewModel.cs" Line="40" Column="40" />
+      <File FileName="Apartner/ViewModels/BaseViewModel.cs" Line="42" Column="30" />
+      <File FileName="Apartner/Views/SwipePage.xaml" Line="39" Column="1" />
+      <File FileName="packages/Xamarin.Forms.3.0.0.482510/build/netstandard2.0/Xamarin.Forms.targets" Line="44" Column="3" />
+      <File FileName="packages/Xamarin.Forms.3.1.0.583944/build/netstandard2.0/Xamarin.Forms.targets" Line="47" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Apartner.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.365BFA1E-E86C-4D4A-B80F-C3E5E47FBB26">
@@ -20,13 +15,7 @@
   </MonoDevelop.Ide.ItemProperties.Apartner.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/SwipePage.xaml.cs" relfile="Apartner/Views/SwipePage.xaml.cs" line="62" column="1" />
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Views/SwipePage.xaml.cs" relfile="Apartner/Views/SwipePage.xaml.cs" line="74" column="1" />
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Models/Apartment.cs" relfile="Apartner/Models/Apartment.cs" line="53" column="1" />
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/Models/Apartment.cs" relfile="Apartner/Models/Apartment.cs" line="45" column="1" />
-      <Breakpoint file="/Users/ndiamant/Projects/Apartner/Apartner/ViewModels/ApartmentViewModel.cs" relfile="Apartner/ViewModels/ApartmentViewModel.cs" line="47" column="68" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Apartner FirstBuild="True" HideGettingStarted="True" />

@@ -1,32 +1,51 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Apartner.Models;
+using Apartner.Views;
 using Xamarin.Forms;
 namespace Apartner.ViewModels
 {
     public class ApartmentViewModel : BaseViewModel
     {
-        public ObservableCollection<Apartment> Apartments { get; set; }
+        public List<string> ApartmentsJson { get; set; }
         public Command LoadItemsCommand { get; set; }
+        private Apartment m_Apartment;
 
-        public Apartment Apartment { get => Apartments[0]; }
+        public Apartment Apartment
+        {
+            get
+            {
+                //m_Apartment.DeserializeApart(ApartmentsJson[0]);
+                return m_Apartment;
+            }
+        }
 
         public ApartmentViewModel()
         {
             Title = "Browse";
-            Apartments = new ObservableCollection<Apartment>();
+            ApartmentsJson = new List<string>();
+            if(m_Apartment == null)
+            {
+                m_Apartment = new Apartment();
+            }
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
 
-            //MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
-            //{
-            //    var _item = item as Item;
-            //    Items.Add(_item);
-            //    await DataStore.AddItemAsync(_item);
-            //});
+            MessagingCenter.Subscribe<SwipePage, Apartment>(this, "LikedApartment", async (obj, item) =>
+            {
+                var _item = item as Apartment;
+                //Items.Add(_item);
+                await DataStore.LikedApartmentAsync(_item.ToString());
+            });
+
+            MessagingCenter.Subscribe<SwipePage, Apartment>(this, "DislikedApartment", async (obj, item) =>
+            {
+                var _item = item as Apartment;
+                //Items.Add(_item);
+                await DataStore.DislikedApartmentAsync(_item.ToString());
+            });
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -38,13 +57,11 @@ namespace Apartner.ViewModels
 
             try
             {
-                Apartments.Clear();
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
-                    Apartments.Add(item);
+                    ApartmentsJson.Add(item);
                 }
-                Apartments[0].PropertyChanged += Apartment.SetPropertyChangedForAll;
             }
             catch (Exception ex)
             {
@@ -58,7 +75,12 @@ namespace Apartner.ViewModels
 
         public void RemoveApartment()
         {
-            Apartments.RemoveAt(0);
+            if(ApartmentsJson.Count <= 2)
+            {
+                LoadItemsCommand.Execute(null);
+            }
+            ApartmentsJson.RemoveAt(0);
+            m_Apartment.DeserializeApart(ApartmentsJson[0]);
         }
 
 
