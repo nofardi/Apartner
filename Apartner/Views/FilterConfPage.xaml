@@ -1,5 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Apartner.Views.FilterConfPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:Sample.InputKit"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="Apartner.Views.FilterConfPage">
     <ContentPage.Content>
+            <StackLayout >
+                <Label Text="Describe your dream place"/>
+                <Label Text="Maximum Price: " />
+                <input:AdvancedSlider x:Name="Price" MaxValue="10000" MinValue="1000" StepValue="50" ValuePrefix="Price:" ValueSuffix="ILS" Title="Choose Budget:"/>
+                <Label Text="Other facilities:"/>
+                <Button Text="Next" Clicked="OnSetFilterClicked" VerticalOptions="EndAndExpand"/>
+            </StackLayout>
+          
     </ContentPage.Content>
 </ContentPage>

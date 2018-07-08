@@ -42,7 +42,7 @@ namespace Apartner.Views
 
         async void OnFacebookClick(object sender, EventArgs e)
         {
-            var swipePage = new Views.SwipePage();
+            var swipePage = new Views.ProfileSelectPage();
             Navigation.InsertPageBefore(swipePage, this);
             await Navigation.PopAsync();
         }
