@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Apartner.Models;
+using Xamarin.Auth;
 
 namespace Apartner.Views
 {
@@ -42,6 +43,8 @@ namespace Apartner.Views
 
         async void OnFacebookClick(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new ServiceToLogin());
+
             var swipePage = new Views.ProfileSelectPage();
             Navigation.InsertPageBefore(swipePage, this);
             await Navigation.PopAsync();
