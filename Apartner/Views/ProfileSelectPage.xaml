@@ -4,9 +4,11 @@
             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              x:Class="Apartner.Views.ProfileSelectPage">
     <ContentPage.Content>
-        <StackLayout >
-            <input:CheckBox x:Name="isLookingForApartment" Text="Looking for aprtment" Type="Check"/>
-            <input:CheckBox x:Name="isLookingForRoommate" Text="Looking for a roommate" Type="Check"/>
+        <StackLayout>
+            <input:RadioButtonGroupView>
+                <input:RadioButton x:Name="isLookingForApartment" Text="Looking for aprtment"/>
+                <input:RadioButton x:Name="isLookingForRoommate" Text="Looking for a roommate"/>
+            </input:RadioButtonGroupView>
             <Button Text="Next" Clicked="OnSetProfileClicked" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>

@@ -25,7 +25,7 @@
                 <Image Source="cash_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="StartAndExpand"/>
                 <Label Text="{Binding Apartment.Price, Mode=TwoWay}"/>
             </StackLayout>
-            <StackLayout  Grid.Row="4" Grid.Column="2"> 
+            <StackLayout Grid.Row="4" Grid.Column="2"> 
                 <Image Source="calendar_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="StartAndExpand"/>
                 <Label Text="{Binding Apartment.EntryDate, Mode=TwoWay}"/>
             </StackLayout>

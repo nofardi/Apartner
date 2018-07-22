@@ -7,8 +7,7 @@ namespace Apartner.Models
         {
             {"Furnished", "couch_icon"},
             {"Cables", "cables_icon"},
-            {"Coffee Machine", "coffee_icon"},
-            {"apartImage", "backgroundApart"}
+            {"Coffee Machine", "coffee_icon"}
         };
 
     }

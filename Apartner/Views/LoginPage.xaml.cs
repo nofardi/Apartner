@@ -45,13 +45,15 @@ namespace Apartner.Views
         {
             await Navigation.PushModalAsync(new ServiceToLogin());
 
-            var swipePage = new Views.ProfileSelectPage();
-            Navigation.InsertPageBefore(swipePage, this);
+            var profileConfPage = new Views.ProfileConfPage();
+            Navigation.InsertPageBefore(profileConfPage, this);
             await Navigation.PopAsync();
         }
 
         async void OnGmailClick(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new ServiceToLogin());
+
             var swipePage = new Views.SwipePage();
             Navigation.InsertPageBefore(swipePage, this);
             await Navigation.PopAsync();
