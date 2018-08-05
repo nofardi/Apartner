@@ -86,10 +86,19 @@ namespace Apartner.Views
             await Navigation.PopAsync();
         }
 
+
+
         async void openMapClicked(object sender, EventArgs e)
         {
             var mapModalPage = new MapModalPage();
             await Navigation.PushModalAsync(mapModalPage);
+
+        }
+
+        async void openSelectionClicked(object sender, EventArgs e)
+        {
+            var locationSelectionModal = new LocationSelectionModalPage();
+            await Navigation.PushModalAsync(locationSelectionModal);
 
         }
     }

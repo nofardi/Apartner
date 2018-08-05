@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Sample.InputKit"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="Apartner.Views.LocationSelectionModalPage">
+    <ContentPage.Content>
+       <StackLayout>
+            <StackLayout Padding="20">
+                <Label Text="Choose Your Dreamy Areas" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center"/>
+                <input:CheckBox x:Name="allAreasChecked" Text="All" IsChecked="false" CheckChanged="OnCheckAllChanged"/>
+                <StackLayout x:Name="specificAreas" Margin="20,0,0,0">
+                    <input:CheckBox Text="North"/>
+                    <input:CheckBox Text="Old North"/>
+                    <input:CheckBox Text="New North"/>
+                    <input:CheckBox Text="Center"/>
+                    <input:CheckBox Text="South"/>
+
+                </StackLayout>
+                <Button Text="Find me apartments nearby!" Clicked="OnNearbyClicked"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Done" BackgroundColor="Silver" TextColor="Black" FontSize="Medium" Clicked="OnDoneClickedAsync"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

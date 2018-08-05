@@ -11,7 +11,7 @@
                 <StackLayout Padding="20">
                     <Label x:Name="textBox" BindingContext="{x:Reference Name=PriceSlider}" Text="{Binding Value, StringFormat='Maximum price {0} ILS' Mode=TwoWay}" />
                     <input:AdvancedSlider x:Name="PriceSlider" MaxValue="10000" MinValue="1000" StepValue="50" DisplayMinMaxValue="false"  BindingContext="{x:Reference Name=textBox}" Value="{Binding Path=Text, Mode=TwoWay}"/>
-                    <Button Text="Choose Your Dreamy Location" Clicked="openMapClicked"/>
+                    <Button Text="Choose Your Dreamy Location" Clicked="openSelectionClicked"/>
                     <Label Text="Other facilities:"/>
                 </StackLayout>
                 <StackLayout Padding="10">
