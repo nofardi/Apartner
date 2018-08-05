@@ -20,16 +20,16 @@ namespace Apartner.Models
             
         }
 
-        public Apartment(string i_Address, int i_Price, int i_RoomsNumber, int i_RoommatesNum, List<string> i_Properties, List<string> i_Images, double i_EntryDate)
-        {
-            m_Address = i_Address;
-            m_Price = i_Price;
-            m_RoomsNum = i_RoomsNumber;
-            m_RoommatesNum = i_RoommatesNum;
-            m_EntryDate = i_EntryDate;
-            m_Properties = i_Properties;
-            m_Images = i_Images;
-        }
+        //public Apartment(string i_Address, int i_Price, int i_RoomsNumber, int i_RoommatesNum, List<string> i_Properties, List<string> i_Images, double i_EntryDate)
+        //{
+        //    m_Address = i_Address;
+        //    m_Price = i_Price;
+        //    m_RoomsNum = i_RoomsNumber;
+        //    m_RoommatesNum = i_RoommatesNum;
+        //    m_EntryDate = i_EntryDate;
+        //    m_Properties = new List<string>(i_Properties);
+        //    m_Images = new List<string>(i_Images);
+        //}
 
         public string Address
         {
@@ -84,12 +84,33 @@ namespace Apartner.Models
         public void DeserializeApart(string i_AparmentJsonStr)
         {
             Apartment tempApart = JsonConvert.DeserializeObject<Apartment>(i_AparmentJsonStr);
+
+
             this.Address = tempApart.Address;
             this.Price = tempApart.Price;
             this.EntryDate = tempApart.EntryDate;
             this.RoommatesNumber = tempApart.RoommatesNumber;
-            this.Properties = tempApart.Properties;
-            this.Images = tempApart.Images;
+
+            if(this.Properties == null)
+            {
+                this.Properties = new List<string>();
+            }
+            if(Images == null)
+            {
+                this.Images = new List<string>();
+            }
+            this.Properties.Clear();
+            foreach(string prop in tempApart.Properties)
+            {
+                this.Properties.Add(prop);
+            }
+
+            this.Images.Clear();
+            foreach(string image in tempApart.Images)
+            {
+                this.Images.Add(image);
+            }
+
         }
 
     }

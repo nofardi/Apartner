@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Apartner.Views.SwipePage">
     <ContentPage.Content>
-   
-        <Grid Margin="10" x:Name="ApartmentView">
-           <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-
-             <StackLayout x:Name="apartSwipe" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Padding="0" Spacing="5">
-                <Label>Apartment</Label>
-                <Button Clicked="Image_Clicked" Image="{Binding Apartment.Images[0]}" HeightRequest="100" WidthRequest="100"/>
+        <StackLayout>
+            <Grid Margin="10" x:Name="ApartmentView">
+               <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                   
+                 <StackLayout x:Name="apartSwipe" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Padding="0" Spacing="5">
+                    <Label>Apartment</Label>
+                    <Button Clicked="OnImageClicked" Image="{Binding Apartment.Images[0]}" HeightRequest="300"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="3" Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                    <Image Source="location_icon" HeightRequest="20" WidthRequest="20"/>
+                    <Label Text="{Binding Apartment.Address, Mode=TwoWay}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Grid.Column="1" VerticalOptions="Center" >
+                    <Image Source="cash_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Apartment.Price, Mode=TwoWay}" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Grid.Column="2" VerticalOptions="Center"> 
+                    <Image Source="calendar_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Apartment.EntryDate, Mode=TwoWay}" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Grid.Column="3" VerticalOptions="Center">
+                    <Image Source="team_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Apartment.RoommatesNumber, Mode=TwoWay}" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Margin="10">
+                <Button Clicked="OnDislikeClicked" Image="trash_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="Center" Margin="10"/>
+                <Button Clicked="OnLikeClicked" Image="heart_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="Center" Margin="10"/>
             </StackLayout>
-            <StackLayout Grid.Row="3" Grid.ColumnSpan="3" Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
-                <Image Source="location_icon" HeightRequest="20" WidthRequest="20"/>
-                <Label Text="{Binding Apartment.Address, Mode=TwoWay}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-            </StackLayout>
-            <StackLayout Grid.Row="4" Grid.Column="1">
-                <Image Source="cash_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="StartAndExpand"/>
-                <Label Text="{Binding Apartment.Price, Mode=TwoWay}"/>
-            </StackLayout>
-            <StackLayout Grid.Row="4" Grid.Column="2"> 
-                <Image Source="calendar_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="StartAndExpand"/>
-                <Label Text="{Binding Apartment.EntryDate, Mode=TwoWay}"/>
-            </StackLayout>
-            <StackLayout Grid.Row="4" Grid.Column="3">
-                <Image Source="team_icon" HeightRequest="34" WidthRequest="34" HorizontalOptions="StartAndExpand"/>
-                <Label Text="{Binding Apartment.RoommatesNumber, Mode=TwoWay}"/>
-            </StackLayout>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

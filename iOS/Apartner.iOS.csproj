@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xamarin.Forms.3.1.0.583944\build\netstandard2.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.583944\build\netstandard2.0\Xamarin.Forms.props')" />
+  <Import Project="..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -98,37 +98,46 @@
     <Reference Include="Plugin.Connectivity">
       <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\packages\Xamarin.Forms.3.1.0.583944\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform">
-      <HintPath>..\packages\Xamarin.Forms.3.1.0.583944\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform.iOS">
-      <HintPath>..\packages\Xamarin.Forms.3.1.0.583944\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\packages\Xamarin.Forms.3.1.0.583944\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.InputKit">
-      <HintPath>..\packages\Xamarin.Forms.InputKit.1.1.0\lib\xamarin.ios10\Plugin.InputKit.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Auth">
       <HintPath>..\packages\Xamarin.Auth.1.6.0.2\lib\Xamarin.iOS10\Xamarin.Auth.dll</HintPath>
     </Reference>
     <Reference Include="System.Json" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps">
+      <HintPath>..\packages\Xamarin.Forms.Maps.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps.iOS">
+      <HintPath>..\packages\Xamarin.Forms.Maps.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Maps.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.3.0.0.12\lib\xamarinios10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.5.0.6\lib\xamarinios10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InputKit">
+      <HintPath>..\packages\Xamarin.Forms.InputKit.2.2.1.1\lib\xamarin.ios10\Plugin.InputKit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\couch_icon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\couch_icon.imageset\couch_icon.png" />
     <ImageAsset Include="Assets.xcassets\backgroundApart.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\backgroundApart.imageset\backgroundApart.jpg" />
     <ImageAsset Include="Assets.xcassets\coffee_icon.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\cables_icon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\coffee_icon.imageset\coffee_icon.png" />
-    <ImageAsset Include="Assets.xcassets\cables_icon.imageset\cables_icon.png" />
     <ImageAsset Include="Assets.xcassets\team_icon.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\cash_icon.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\calendar_icon.imageset\Contents.json" />
@@ -136,7 +145,24 @@
     <ImageAsset Include="Assets.xcassets\cash_icon.imageset\cash_icon.png" />
     <ImageAsset Include="Assets.xcassets\team_icon.imageset\team_icon.png" />
     <ImageAsset Include="Assets.xcassets\location_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\heart_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\trash_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\heart_icon.imageset\heart_icon.png" />
+    <ImageAsset Include="Assets.xcassets\trash_icon.imageset\trash_icon.png" />
     <ImageAsset Include="Assets.xcassets\location_icon.imageset\location_icon.png" />
+    <ImageAsset Include="Assets.xcassets\cables_icon.imageset\cables_icon.png" />
+    <ImageAsset Include="Assets.xcassets\coffee_icon.imageset\coffee_icon.png" />
+    <ImageAsset Include="Assets.xcassets\couch_icon.imageset\couch_icon.png" />
+    <ImageAsset Include="Assets.xcassets\washing_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ac_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ac_icon.imageset\ac_icon.png" />
+    <ImageAsset Include="Assets.xcassets\washing_icon.imageset\washing_icon.png" />
+    <ImageAsset Include="Assets.xcassets\apart2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\apart3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\apart4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\apart2.imageset\apart2.jpg" />
+    <ImageAsset Include="Assets.xcassets\apart3.imageset\apart3.jpg" />
+    <ImageAsset Include="Assets.xcassets\apart4.imageset\apart4.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_about.png" />
@@ -174,8 +200,15 @@
     <Folder Include="Assets.xcassets\cash_icon.imageset\" />
     <Folder Include="Assets.xcassets\calendar_icon.imageset\" />
     <Folder Include="Assets.xcassets\location_icon.imageset\" />
+    <Folder Include="Assets.xcassets\heart_icon.imageset\" />
+    <Folder Include="Assets.xcassets\trash_icon.imageset\" />
+    <Folder Include="Assets.xcassets\washing_icon.imageset\" />
+    <Folder Include="Assets.xcassets\ac_icon.imageset\" />
+    <Folder Include="Assets.xcassets\apart2.imageset\" />
+    <Folder Include="Assets.xcassets\apart3.imageset\" />
+    <Folder Include="Assets.xcassets\apart4.imageset\" />
   </ItemGroup>
   <Import Project="..\Apartner\Apartner.projitems" Label="Shared" Condition="Exists('..\Apartner\Apartner.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Forms.3.1.0.583944\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.583944\build\netstandard2.0\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.targets')" />
 </Project>

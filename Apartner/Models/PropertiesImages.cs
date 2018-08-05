@@ -7,8 +7,9 @@ namespace Apartner.Models
         {
             {"Furnished", "couch_icon"},
             {"Cables", "cables_icon"},
-            {"Coffee Machine", "coffee_icon"}
+            {"Coffee Machine", "coffee_icon"},
+            {"Washing Machine", "washing_icon"},
+            {"AC", "ac_icon"}
         };
-
     }
 }

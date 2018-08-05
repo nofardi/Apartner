@@ -15,8 +15,8 @@ namespace Apartner
             apartments = new List<string>();
             var mockItems = new List<string>
             {
-                @"{'Address': 'Rashi 13', 'Price': '3500', 'RoommatesNumber': '2', 'EntryDate': '1.8', 'Properties': ['Coffee Machine','Cables','Furnished'], 'Images': ['backgroundApart']}", 
-                @"{'Address': 'Dizi 123', 'Price': '3100', 'RoommatesNumber': '3', 'EntryDate': '1.9', 'Properties': ['Cables'], 'Images': ['backgroundApart']}",  
+                @"{'Address': 'Rashi 13', 'Price': '3500', 'RoommatesNumber': '2', 'EntryDate': '1.8', 'Properties': ['Coffee Machine','Cables','Furnished'], 'Images': ['backgroundApart', 'apart2', 'apart3']}", 
+                @"{'Address': 'Dizi 123', 'Price': '3100', 'RoommatesNumber': '3', 'EntryDate': '1.9', 'Properties': ['Cables'], 'Images': ['backgroundApart', 'apart3', 'apart4']}",  
                     
             };
 

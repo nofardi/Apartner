@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Apartner.Views.ProfileConfPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Apartner.Views.ProfileConfPage">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Next" Clicked="OnProfileSetClicked"/>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+               <Label Text="Fetching Facebook Profile..."/>
+            </StackLayout>
+           <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Next" BackgroundColor="Silver" TextColor="Black" Clicked="OnProfileSetClicked"/>
+           </StackLayout> 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

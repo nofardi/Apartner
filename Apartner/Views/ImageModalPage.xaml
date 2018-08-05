@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Apartner.Views.ImageModalPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Apartner.Views.ImageModalPage">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Button x:Name="dismissButton" Text="X" Clicked="OnDismissButtonClicked"/>
-            <StackLayout Orientation="Horizontal">
-                <Image x:Name="apartmentImg" HorizontalOptions="Fill" VerticalOptions="Fill"/>
-            </StackLayout>          
-        </StackLayout>
+        <StackLayout >
+            <StackLayout>
+                <Button x:Name="dismissButton" Text="X" FontAttributes="Bold" TextColor="Black" HorizontalOptions="End" Clicked="OnDismissButtonClicked" Margin="10"/>                        
+            </StackLayout>
+                <StackLayout x:Name="photoSwipe" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="500" HeightRequest="500"></StackLayout>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,11 +5,16 @@
              x:Class="Apartner.Views.ProfileSelectPage">
     <ContentPage.Content>
         <StackLayout>
-            <input:RadioButtonGroupView>
-                <input:RadioButton x:Name="isLookingForApartment" Text="Looking for aprtment"/>
-                <input:RadioButton x:Name="isLookingForRoommate" Text="Looking for a roommate"/>
-            </input:RadioButtonGroupView>
-            <Button Text="Next" Clicked="OnSetProfileClicked" VerticalOptions="EndAndExpand"/>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="What Are You Here For?" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30"/>
+                <input:RadioButtonGroupView Margin="20">
+                    <input:RadioButton x:Name="isLookingForApartment" Text="Looking for an aprtment" Margin="20" FontSize="25"/>
+                    <input:RadioButton x:Name="isLookingForRoommate" Text="Looking for a roommate" Margin="20" FontSize="25"/>
+                </input:RadioButtonGroupView>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Next" FontSize="Medium" BackgroundColor="Silver" TextColor="Black" Clicked="OnSetProfileClicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

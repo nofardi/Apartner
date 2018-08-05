@@ -46,8 +46,8 @@ namespace Apartner.Droid
                     // The user cancelled
                 }
             };
-
-            activity.StartActivity(auth.GetUI(activity));
+            if(App.Token == null)
+                activity.StartActivity(auth.GetUI(activity));
         }
     }
 

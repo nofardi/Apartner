@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
+
 using Xamarin.Forms;
 
 namespace Apartner.Views
@@ -10,6 +12,7 @@ namespace Apartner.Views
         public ProfileConfPage()
         {
             InitializeComponent();
+
         }
 
         async void OnProfileSetClicked(object sender, System.EventArgs e)

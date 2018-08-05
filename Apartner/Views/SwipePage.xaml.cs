@@ -55,10 +55,20 @@ namespace Apartner.Views
             }
         }
 
-        async void Image_Clicked(object sender, System.EventArgs e)
+        async void OnImageClicked(object sender, System.EventArgs e)
         {
-            var imageSource = new ImageModalPage(m_ApartmentModel.Apartment.Images[0]);
+            var imageSource = new ImageModalPage(m_ApartmentModel.Apartment.Images);
             await Navigation.PushModalAsync(imageSource);
+        }
+
+        async void OnLikeClicked(object sender, System.EventArgs e)
+        {
+            handleLikePressed();
+        }
+
+        async void OnDislikeClicked(object sender, System.EventArgs e)
+        {
+            handleDislikePressed();
         }
 
         public void onBottomSwipe(View view)
@@ -68,12 +78,26 @@ namespace Apartner.Views
 
         public void onLeftSwipe(View view)
         {
+            handleDislikePressed();
+
+        }
+
+        private void handleDislikePressed()
+        {
             //remove apratment for list
             MessagingCenter.Send(this, "DislikedApartment", m_ApartmentModel.Apartment);
             m_ApartmentModel.RemoveApartment();
             removePropFromView();
             addPropsToGrid();
             //remove apartment from user DB
+        }
+
+        private void handleLikePressed()
+        {
+            MessagingCenter.Send(this, "LikedApartment", m_ApartmentModel.Apartment);
+            m_ApartmentModel.RemoveApartment();
+            removePropFromView();
+            addPropsToGrid();
         }
 
         public void onNothingSwiped(View view)
@@ -83,10 +107,7 @@ namespace Apartner.Views
 
         public void onRightSwipe(View view)
         {
-            MessagingCenter.Send(this, "LikedApartment", m_ApartmentModel.Apartment);
-            m_ApartmentModel.RemoveApartment();
-            removePropFromView();
-            addPropsToGrid();
+            handleLikePressed();
         }
 
         public void onTopSwipe(View view)

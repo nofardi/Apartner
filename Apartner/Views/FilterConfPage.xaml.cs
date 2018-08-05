@@ -21,18 +21,21 @@ namespace Apartner.Views
             foreach (var item in PropertiesImages.m_PropertiesImages)
             {
                 stackLayout = new StackLayout();
-                stackLayout.HorizontalOptions = LayoutOptions.Center;
+                stackLayout.VerticalOptions = LayoutOptions.Center;
+
                 Label propLabel = new Label();
                 Image propImg = new Image();
                 propLabel.Text = item.Key;
+                propLabel.HorizontalOptions = LayoutOptions.Center;
                 propImg.Source = item.Value;
                 propImg.WidthRequest = 30;
                 propImg.HeightRequest = 30;
-                propImg.HorizontalOptions = LayoutOptions.StartAndExpand;
+                propImg.HorizontalOptions = LayoutOptions.Center;
 
                 stackLayout.Children.Add(propImg);
                 stackLayout.Children.Add(propLabel);
                 CheckBox checkBox = new CheckBox("", propIdx);
+                checkBox.HorizontalOptions = LayoutOptions.Center;
                 checkBox.CheckChanged += saveFilterProp;
 
                 stackLayout.Children.Add(checkBox);
@@ -81,6 +84,13 @@ namespace Apartner.Views
             var swipePage = new Views.SwipePage();
             Navigation.InsertPageBefore(swipePage, this);
             await Navigation.PopAsync();
+        }
+
+        async void openMapClicked(object sender, EventArgs e)
+        {
+            var mapModalPage = new MapModalPage();
+            await Navigation.PushModalAsync(mapModalPage);
+
         }
     }
 }

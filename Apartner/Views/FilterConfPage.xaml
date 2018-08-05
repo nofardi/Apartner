@@ -5,14 +5,23 @@
              x:Class="Apartner.Views.FilterConfPage">
     <ContentPage.Content>
             <StackLayout >
-                <Label Text="Describe your dream place"/>
-                <Label x:Name="textBox" BindingContext="{x:Reference Name=PriceSlider}" Text="{Binding Value, StringFormat='Maximum price {0} ILS' Mode=TwoWay}"/>
-                <input:AdvancedSlider x:Name="PriceSlider" MaxValue="10000" MinValue="1000" StepValue="50" DisplayMinMaxValue="false" BindingContext="{x:Reference Name=textBox}" Value="{Binding Path=Text, Mode=TwoWay}"/>
-                <Label Text="Other facilities:"/>
-                <Grid x:Name="FacilitiesGrid"></Grid>
-                <Button Text="Skip" Clicked="OnSkipClicked"/>
-                <Button Text="Next" Clicked="OnSetFilterClicked" VerticalOptions="EndAndExpand"/>
-            </StackLayout>
-          
+                <StackLayout>
+                    <Label Text="Describe Your Dream Place" HorizontalOptions="Center" FontAttributes="Bold" FontSize="25" Margin="20"/>
+                </StackLayout>
+                <StackLayout Padding="20">
+                    <Label x:Name="textBox" BindingContext="{x:Reference Name=PriceSlider}" Text="{Binding Value, StringFormat='Maximum price {0} ILS' Mode=TwoWay}" />
+                    <input:AdvancedSlider x:Name="PriceSlider" MaxValue="10000" MinValue="1000" StepValue="50" DisplayMinMaxValue="false"  BindingContext="{x:Reference Name=textBox}" Value="{Binding Path=Text, Mode=TwoWay}"/>
+                    <Button Text="Choose Your Dreamy Location" Clicked="openMapClicked"/>
+                    <Label Text="Other facilities:"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Grid x:Name="FacilitiesGrid"></Grid>
+                    <Button Text="Skip" Clicked="OnSkipClicked"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <Button Text="Next" Clicked="OnSetFilterClicked" BackgroundColor="Silver" TextColor="Black" FontSize="Medium" />
+                </StackLayout>
+
+          </StackLayout>
     </ContentPage.Content>
 </ContentPage>
