@@ -56,8 +56,8 @@ namespace Apartner.iOS
                     if (eventArgs.IsAuthenticated)
                     {
                         App.SuccessfulLoginAction.Invoke();
-                    // Use eventArgs.Account to do wonderful things
-                    App.SaveToken(eventArgs.Account.Properties["access_token"]);
+                        // Use eventArgs.Account to do wonderful things
+                        App.SaveToken(eventArgs.Account.Properties["access_token"]);
                     }
                     else
                     {

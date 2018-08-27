@@ -4,9 +4,31 @@
     x:Class="Apartner.Views.ProfileConfPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-               <Label Text="Fetching Facebook Profile..."/>
+            <StackLayout>
+                <Image HeightRequest="100" WidthRequest="100" Source="{Binding ProfilePic, Mode=TwoWay}"/>
             </StackLayout>
+            <StackLayout HorizontalOptions="StartAndExpand"  Padding="20">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Name" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Entry Text="{Binding Name, Mode=TwoWay}" WidthRequest="150" HorizontalOptions="End"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Age" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Age, Mode=TwoWay}" WidthRequest="150"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Relationship Status" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Relationship, Mode=TwoWay}" WidthRequest="150"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="E-mail" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Email, Mode=TwoWay}" WidthRequest="150"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Gender" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Gender, Mode=TwoWay}" WidthRequest="150"/>
+                </StackLayout>
+               </StackLayout>
            <StackLayout VerticalOptions="EndAndExpand">
                 <Button Text="Next" BackgroundColor="Silver" TextColor="Black" Clicked="OnProfileSetClicked"/>
            </StackLayout> 
